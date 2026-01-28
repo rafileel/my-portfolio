@@ -1,52 +1,138 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafitajudin | Portfolio</title>
+    <title>Rafitajudin | Data Engineer & Web Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-slate-50 text-slate-900 font-sans">
 
-    <nav class="p-6 bg-white shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-xl font-bold text-blue-600">Rafitajudin.</h1>
-            <div class="space-x-4">
-                <a href="#about" class="hover:text-blue-500">Tentang</a>
-                <a href="#projects" class="hover:text-blue-500">Proyek</a>
-                <a href="mailto:rafitajudin5758@gmail.com" class="bg-blue-600 text-white px-4 py-2 rounded">Kontak</a>
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-2xl font-black tracking-tighter text-blue-600">RAFI.</span>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="hover:text-blue-600 transition">Home</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+                <a href="#case-studies" class="hover:text-blue-600 transition">Projects</a>
+                <a href="mailto:rafitajudin5758@gmail.com" class="text-blue-600 border border-blue-600 px-4 py-1 rounded-full hover:bg-blue-600 hover:text-white transition">Contact</a>
             </div>
         </div>
     </nav>
 
-    <header id="about" class="container mx-auto py-20 px-6 text-center">
-        <img src="https://via.placeholder.com/150" alt="Foto Rafi" class="w-32 h-32 rounded-full mx-auto mb-6 shadow-lg">
-        <h2 class="text-4xl font-extrabold mb-4">Halo, Saya Rafitajudin</h2>
-        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-            Lulusan Informatika dengan IPK 3.88. Spesialis dalam <strong>Data Engineering</strong> (MySQL, Talend) dan <strong>Web Development</strong>.
-        </p>
-    </header>
+    <section id="home" class="pt-32 pb-20 px-6">
+        <div class="container mx-auto text-center">
+            <div class="mb-8">
+                <img src="foto/rafi.png" 
+                     alt="Rafitajudin" 
+                     class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto object-cover border-4 border-white shadow-xl">
+            </div>
+            
+            <div class="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wide text-blue-600 uppercase bg-blue-100 rounded-full">
+                Available for Work
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
+                Data Engineer & <br><span class="text-blue-600">Web Developer.</span>
+            </h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto mb-10">
+                Lulusan Informatika (IPK 3.88) dengan keahlian dalam membangun infrastruktur data (ETL/SQL) dan solusi web responsif. Berfokus pada pengolahan data yang efisien dan desain yang berdampak.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="https://www.linkedin.com/in/rafitajudin-rafi-7792b726b/" target="_blank" class="bg-slate-900 text-white px-8 py-3 rounded-xl font-bold hover:bg-slate-800 shadow-lg transition">LinkedIn</a>
+                <a href="#case-studies" class="bg-white border border-slate-200 px-8 py-3 rounded-xl font-bold hover:bg-slate-50 transition">View Projects</a>
+            </div>
+        </div>
+    </section>
 
-    <section id="projects" class="bg-white py-20 px-6">
-        <div class="container mx-auto">
-            <h3 class="text-3xl font-bold mb-12 text-center">Proyek Unggulan</h3>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="border p-6 rounded-xl hover:shadow-xl transition">
-                    <h4 class="text-xl font-bold mb-2">MSIB: Data Engineering Academy</h4>
-                    <p class="text-gray-600 mb-4">Analisis distribusi cuaca menggunakan MySQL, Talend, dan Tableau.</p>
-                    <span class="text-sm bg-blue-100 text-blue-700 py-1 px-3 rounded">Data Engineering</span>
+    <section id="skills" class="py-20 bg-white border-y border-slate-200">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center text-slate-400 uppercase tracking-widest text-sm">Skills & Tools</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-6 rounded-2xl bg-slate-50 shadow-sm">
+                    <i class="fa-solid fa-database text-3xl text-blue-500 mb-4"></i>
+                    <h4 class="font-bold">SQL (MySQL)</h4>
                 </div>
-                <div class="border p-6 rounded-xl hover:shadow-xl transition">
-                    <h4 class="text-xl font-bold mb-2">Web Profile Masjid Al-Ittihaad</h4>
-                    <p class="text-gray-600 mb-4">Pengembangan web responsif menggunakan Mobirise dan GitHub Pages.</p>
-                    <span class="text-sm bg-green-100 text-green-700 py-1 px-3 rounded">Web Dev</span>
+                <div class="p-6 rounded-2xl bg-slate-50 shadow-sm">
+                    <i class="fa-solid fa-filter text-3xl text-blue-500 mb-4"></i>
+                    <h4 class="font-bold">ETL (Talend)</h4>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-50 shadow-sm">
+                    <i class="fa-brands fa-python text-3xl text-blue-500 mb-4"></i>
+                    <h4 class="font-bold">Python</h4>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-50 shadow-sm">
+                    <i class="fa-solid fa-code text-3xl text-blue-500 mb-4"></i>
+                    <h4 class="font-bold">Web Dev</h4>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-10 text-center text-gray-500 text-sm">
-        <p>&copy; 2026 Rafitajudin. Dibuat dengan Tailwind CSS.</p>
+    <section id="case-studies" class="py-24 px-6">
+        <div class="container mx-auto">
+            <div class="mb-16">
+                <h2 class="text-4xl font-bold mb-4">Case Studies</h2>
+                <div class="w-20 h-2 bg-blue-600 rounded"></div>
+            </div>
+
+            <div class="space-y-24">
+                <div class="flex flex-col md:flex-row gap-12 items-center">
+                    <div class="md:w-1/2 bg-blue-600 rounded-3xl p-8 text-white aspect-video flex flex-col justify-center">
+                        <span class="text-blue-200 font-mono mb-2">#01 - MSIB Project</span>
+                        <h3 class="text-3xl font-bold mb-4 italic">"Analisis Distribusi Cuaca Jawa Barat"</h3>
+                        <p class="text-blue-100">Implementasi pipeline data dari BMKG & BPS untuk analisis hasil panen.</p>
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-bold mb-4 text-blue-600 underline text-decoration-none">Data Engineering Academy</h3>
+                        <p class="text-slate-600 mb-6 italic font-medium">Data Academy (PT Cendekia Data Andalan)</p>
+                        <ul class="space-y-3 text-slate-700 mb-8">
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> <strong>Pembersihan Data:</strong> Mengolah dataset mentah menggunakan Excel & Python.</li>
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> <strong>ETL Process:</strong> Integrasi data otomatis menggunakan <strong>Talend</strong>.</li>
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> <strong>Visualization:</strong> Insight interaktif menggunakan <strong>Tableau</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row-reverse gap-12 items-center">
+                    <div class="md:w-1/2 bg-slate-800 rounded-3xl p-8 text-white aspect-video flex flex-col justify-center">
+                        <span class="text-slate-400 font-mono mb-2">#02 - KKP Project</span>
+                        <h3 class="text-3xl font-bold mb-4 italic">"Website Profile Masjid Al-Ittihaad"</h3>
+                        <p class="text-slate-300">Digitalisasi informasi organisasi untuk akses jamaah yang lebih mudah.</p>
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-bold mb-4 text-slate-800 underline text-decoration-none">Web Development - KKP</h3>
+                        <p class="text-slate-600 mb-6 italic font-medium">Masjid Al-Ittihaad, Yogyakarta</p>
+                        <ul class="space-y-3 text-slate-700 mb-8">
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> <strong>Responsive Design:</strong> Membangun UI yang ramah seluler dengan <strong>Mobirise</strong>.</li>
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> <strong>Live Hosting:</strong> Implementasi deployment menggunakan <strong>GitHub Pages</strong>.</li>
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> <strong>Analysis:</strong> Melakukan uji publik kepada 17 responden dengan hasil positif.</li>
+                        </ul>
+                        <a href="https://rafileel.github.io/Masjid-Al-Ittihaad/" target="_blank" 
+                           class="inline-flex items-center text-blue-600 font-bold hover:text-blue-800 transition">
+                            Visit Live Website <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 py-12 px-6">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0 text-center md:text-left">
+                <p class="text-white font-bold text-lg">Rafitajudin</p>
+                <p>rafitajudin5758@gmail.com</p>
+                <p class="text-sm">Sukadana, Lampung Timur</p>
+            </div>
+            <div class="flex space-x-6 text-xl">
+                <a href="https://github.com/rafitajudin" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/rafitajudin-rafi-7792b726b/" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="text-center mt-12 pt-8 border-t border-slate-800 text-xs uppercase tracking-widest">
+            &copy; 2026 Designed & Built by Rafitajudin.
+        </div>
     </footer>
 
 </body>
